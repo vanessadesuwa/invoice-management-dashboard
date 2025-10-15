@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="/images/6739974bb2fc6dc5960bdd04_6739972e51d6293982dd6735_Screenshot20atE2AFPM.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Wonder - Invoice Sales</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <div class="logo">Wonder</div>
+
+        <div class="search-box">
+          <input type="text" placeholder="Search..." />
+        </div>
+
+        <nav>
+          <div class="nav-item">
+            <span class="icon">🏢</span>
+            <span>Company Account</span>
+            <span class="arrow">›</span>
+          </div>
+
+          <div class="nav-item active">
+            <span class="icon">💳</span>
+            <span>Payment Acceptance</span>
+            <span class="arrow">›</span>
+          </div>
+
+          <div class="sub-nav">
+            <div class="nav-item active">Invoice Sales</div>
+          </div>
+
+          <div class="nav-item">
+            <span class="icon">💰</span>
+            <span>Payouts</span>
+            <span class="arrow">›</span>
+          </div>
+
+          <div class="nav-item">
+            <span class="icon">📊</span>
+            <span>Analytics</span>
+            <span class="arrow">›</span>
+          </div>
+
+          <div class="nav-item">
+            <span class="icon">📱</span>
+            <span>Extended Service</span>
+            <span class="arrow">›</span>
+          </div>
+
+          <div class="nav-item">
+            <span class="icon">👥</span>
+            <span>Staff Management</span>
+            <span class="arrow">›</span>
+          </div>
+
+          <div class="nav-item">
+            <span class="icon">⚙️</span>
+            <span>Settings</span>
+            <span class="arrow">›</span>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+          <div style="display: flex; align-items: center; gap: 20px">
+            <span class="hamburger" onclick="toggleSidebar()">☰</span>
+            <nav class="header-nav">
+              <a href="#" class="active">Invoice Sales</a>
+            </nav>
+          </div>
+          <div class="header-right">
+            <span>🇺🇸</span>
+            <div class="store-info">
+              <span>🏪</span>
+              <span>Test Boutique Store</span>
+            </div>
+            <div class="user-avatar">A</div>
+            <span>Aiden ›</span>
+          </div>
+        </header>
+
+        <!-- Content -->
+        <div class="content">
+          <div class="content-header">
+            <h1>Invoice Sales</h1>
+            <div class="header-actions">
+              <button class="icon-btn">🔍</button>
+              <button class="icon-btn">⚙️</button>
+              <button class="btn btn-primary">+ New Invoice Link</button>
+              <button class="btn btn-secondary">🔄 Paystation Link</button>
+            </div>
+          </div>
+
+          <!-- Tabs -->
+          <div class="tabs">
+            <button class="tab active">Pending Invoices</button>
+            <button class="tab">Completed Invoices</button>
+            <button class="tab">Voided Invoices</button>
+          </div>
+
+          <!-- Table -->
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>REFERENCE NUMBER</th>
+                  <th>INOICE NUMBER</th>
+                  <th>PAYER</th>
+                  <th>STATUS</th>
+                  <th>PAYMENT METHOD</th>
+                  <th>TOTAL AMOUNT</th>
+                  <th>ACTIONS</th>
+                </tr>
+              </thead>
+              <tbody id="invoiceTable">
+                <tr>
+                  <td>W-173114119012</td>
+                  <td>202411091633177369637336</td>
+                  <td>Wonder Payment Guest</td>
+                  <td><span class="status unpaid">UNPAID</span></td>
+                  <td>--</td>
+                  <td>HK</td>
+                  <td><button class="more-btn">⋯</button></td>
+                </tr>
+                <tr>
+                  <td>W-173114026017</td>
+                  <td>202411091617525589552452</td>
+                  <td>Wonder Payment Guest</td>
+                  <td><span class="status unpaid">UNPAID</span></td>
+                  <td>--</td>
+                  <td>HK</td>
+                  <td><button class="more-btn">⋯</button></td>
+                </tr>
+                <tr>
+                  <td>W-173113996636</td>
+                  <td>202411091615144178363015</td>
+                  <td>Test 005</td>
+                  <td><span class="status partial-paid">PARTIAL PAID</span></td>
+                  <td>Visa</td>
+                  <td>HK</td>
+                  <td><button class="more-btn">⋯</button></td>
+                </tr>
+                <tr>
+                  <td>W-173105458191</td>
+                  <td>202411081629252185723467</td>
+                  <td>Wonder Payment Guest</td>
+                  <td><span class="status unpaid">UNPAID</span></td>
+                  <td>Alipay, Alipay</td>
+                  <td>HK</td>
+                  <td><button class="more-btn">⋯</button></td>
+                </tr>
+                <tr>
+                  <td>W-618671702212</td>
+                  <td>202411081610427119023608</td>
+                  <td>Wonder Payment Guest</td>
+                  <td><span class="status unpaid">UNPAID</span></td>
+                  <td>--</td>
+                  <td>HK</td>
+                  <td><button class="more-btn">⋯</button></td>
+                </tr>
+                <tr>
+                  <td>W-487083235820</td>
+                  <td>202411081608225449724779</td>
+                  <td>Wonder Payment Guest</td>
+                  <td><span class="status unpaid">UNPAID</span></td>
+                  <td>--</td>
+                  <td>HK</td>
+                  <td><button class="more-btn">⋯</button></td>
+                </tr>
+                <tr>
+                  <td>W-173097969394</td>
+                  <td>202411071941397681987370</td>
+                  <td>Wonder Payment Guest</td>
+                  <td><span class="status unpaid">UNPAID</span></td>
+                  <td>Alipay</td>
+                  <td>HK</td>
+                  <td><button class="more-btn">⋯</button></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Pagination -->
+            <div class="pagination">
+              <span class="pagination-info">VIEW</span>
+              <select
+                style="
+                  padding: 8px;
+                  border: 1px solid var(--border-color);
+                  border-radius: 6px;
+                "
+              >
+                <option>50</option>
+                <option>100</option>
+              </select>
+              <button class="pagination-btn active">1</button>
+              <button class="pagination-btn">2</button>
+              <button class="pagination-btn">›</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
